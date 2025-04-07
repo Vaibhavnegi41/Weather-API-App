@@ -1,11 +1,13 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
-        body{
-            height:100%;
-            width:100%;
-            background:linear-gradient(to right,rgb(133, 247, 241),rgb(204, 198, 198));
-            background-size: 100% 200%;
-            background-repeat: no-repeat;
-        }
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
         .outer{
             min-height:200px;
             width:500px;
@@ -114,3 +116,64 @@
             color:white !important;  
             text-shadow: 2px 2px 2px black;
         }
+
+        /* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .outer {
+        width: 90%;
+        padding: 20px;
+        margin-top: 50px;
+        gap: 15px;
+    }
+
+    .header {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+    input#cityname {
+        width: 100%;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+
+    .footer h1 {
+        font-size: 28px;
+    }
+
+    .temp,
+    .type,
+    .humidity {
+        font-size: 16px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .speed {
+        font-size: 14px;
+    }
+}
