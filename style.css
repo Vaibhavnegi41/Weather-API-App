@@ -113,8 +113,8 @@ body {
             font-weight: 500;
         }
         .speed{
-            color:white !important;  
-            text-shadow: 2px 2px 2px black;
+            color:black !important;  
+            text-shadow: 2px 2px 2px white;
         }
 
         /* Responsive Design for Mobile Devices */
